@@ -1,0 +1,452 @@
+#page-top {
+    font-size: 1em;
+    font-family: "微软雅黑";
+}
+
+#page-top .pages .col-xs-12 {
+    padding: 0;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.menu-bg {
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 109;
+
+}
+
+.page-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    z-index: 999;
+    width: 100%;
+}
+
+.page-bar > ul {
+    width: 99.6%;
+    padding: 0 0.2%;
+    list-style: none;
+    margin: 0;
+}
+
+.page-bar > ul li {
+    float: left;
+    width: 16.6%;
+    padding: 7px 0 0 0;
+    height: 45px;;
+    background: linear-gradient(to bottom, #ffffff, #d3d3d3, #ffffff) no-repeat right center / 1px 15px;;
+}
+
+.page-bar > ul li:last-child {
+    background: none;
+}
+
+.page-bar a {
+    display: block;
+    height: 45px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 15px;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.page-bar a:hover {
+    font-size: 1.4em;
+}
+
+.page-bar a.current {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 340px) {
+    .page-bar a,
+    .page-bar a:hover {
+        font-size: 1.2em;
+    }
+
+    .page-bar a.current {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+}
+
+.page-bar i {
+
+}
+
+#main-page {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+#main-page .pages {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: #ffffff;
+}
+
+#main-page .pages:nth-child(even) {
+    top: 100vh;
+}
+
+#main-page .pages:nth-child(odd) {
+    top: 100vh;
+}
+
+#main-page .pages:nth-child(1) {
+    z-index: 100;
+    top: 0;
+}
+
+#main-page #page-1 {
+    background-color: #22B573;
+}
+
+#main-page #page-1 .col-xs-12 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#page-1 #resume-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    list-style: none;
+}
+
+#page-1 #resume-icon li {
+    position: absolute;
+    font-size: 4.5em;
+}
+
+#page-1 #resume-icon li a {
+    color: #ffffff;
+}
+
+#page-1 #resume-icon li a:hover {
+    text-decoration: none;
+}
+
+#page-1 #resume-icon li:nth-child(1) {
+    top: 5%;
+    right: 20%;
+    -webkit-animation: icon-scale 0.5s ease-in 0s;
+    -o-animation: icon-scale 0.5s ease-in 0s;
+    animation: icon-scale 0.5s ease-in 0s;
+}
+
+#page-1 #resume-icon li:nth-child(2) {
+    top: 25%;
+    right: 15%;
+    -webkit-animation: icon-scale 0.6s ease-in 0s;
+    -o-animation: icon-scale 0.6s ease-in 0s;
+    animation: icon-scale 0.6s ease-in 0s;
+}
+
+#page-1 #resume-icon li:nth-child(4) {
+    top: 45%;
+    right: 18%;
+    -webkit-animation: icon-scale 0.7s ease-in 0s;
+    -o-animation: icon-scale 0.7s ease-in 0s;
+    animation: icon-scale 0.7s ease-in 0s;
+}
+
+#page-1 #resume-icon li:nth-child(5) {
+    top: 65%;
+    right: 30%;
+    -webkit-animation: icon-scale 0.8s ease-in 0s;
+    -o-animation: icon-scale 0.8s ease-in 0s;
+    animation: icon-scale 0.8s ease-in 0s;
+}
+
+#page-1 #resume-icon li:nth-child(3) {
+    width: 56%;
+    border: 6px solid #66b08c;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 10%;
+    left: 5%;
+    -webkit-animation: icon-scale 0.3s ease-in 0s;
+    -o-animation: icon-scale 0.3s ease-in 0s;
+    animation: icon-scale 0.3s ease-in 0s;
+}
+
+@keyframes icon-scale {
+    0% {
+        transform: scale(0.001, 0.001);
+    }
+    90% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+#page-5 #resume-icon li:nth-child(3) > img {
+    width: 100%
+}
+
+#page-5 article > .introduce {
+    display: none;
+}
+
+#page-5 article {
+    width: 100%;
+    height: 45%;
+}
+
+#page-5 article ul {
+    list-style: none;
+}
+
+#page-5 article ul > li {
+    font-size: 2em;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 340px) {
+    #page-5 article ul > li {
+        font-size: 1.9em;
+
+    }
+
+}
+
+#page-5 article ul i {
+    font-style: normal;
+    display: inline-block;
+    width: 30%;
+    height: 30px;;
+    line-height: 30px;
+    padding-right: 20px;
+    margin-right: 20px;;
+    text-align: right;
+    background: linear-gradient(to bottom, #ffffff, #d3d3d3, #ffffff) no-repeat right center / 1px 15px;;
+}
+
+#page-5 article a {
+    color: #ffffff;
+}
+
+#page-5 article a:hover {
+    color: #ffffff;;
+}
+
+#more-info {
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+    font-size: 2.5em;
+    -webkit-animation: tada;
+    animation: tada 1s ease-in 0.9s ;
+}
+
+#notie-alert-text{
+    text-indent: 2em;
+    text-align: left;
+}
+
+@keyframes tada {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+#main-page #page-3 {
+    background-color: #1889C5;
+}
+
+#main-page #page-3 h1 {
+    text-align: center;
+    text-shadow: 1px 2px #1889C5, 2px 4px #89aac5;
+}
+
+.skills {
+    position: relative;
+    width: 36%;
+    height: 65px;;
+    float: left;
+    margin: 2px 5.5%;;
+}
+
+.skills > div:first-child {
+    margin-bottom: 10px;
+}
+
+.skills > div:first-child span {
+    display: block;
+    float: left;
+    padding: 0 5px;
+    font-size: 1.2em;
+}
+
+.skills > div:first-child .content {
+    float: right;
+}
+
+.skills > div:first-child:after {
+    content: '';
+    display: block;
+    width: 0;
+    font-size: 0;
+    line-height: 0;
+    clear: both;
+}
+
+.skills > .skills-percent {
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.skills > .skills-percent > .percent {
+    background-color: #5cb85c;
+    width: 0%;
+    height: 100%;
+    transition: width 3s ease 0s;
+}
+
+#progress {
+    position: absolute;
+    z-index: 999;
+    height: 2px;
+    background: #1889C5;
+    -webkit-animation: pulse 1.5s ease-out;
+    -o-animation: pulse 1.5s ease-out;
+    animation: pulse 1.5s ease-out;
+    transition: opacity 500ms linear;
+}
+
+#progress span {
+    position: absolute;
+    height: 2px;
+    -webkit-box-shadow: #1889C5 1px 0 2px 1px;
+    -moz-box-shadow: #1889C5 1px 0 2px 1px;
+    box-shadow: #1889C5 1px 0 2px 1px;
+    opacity: 1;
+    width: 100px;
+    right: 3px;
+    -webkit-animation: pulse-span 2s ease-out 0s infinite;
+    -o-animation: pulse-span 2s ease-out 0s infinite;
+    animation: pulse-span 2s ease-out 0s infinite;
+}
+
+#progress.done {
+    opacity: 0;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes pulse-span {
+    30% {
+        opacity: .6;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .6;
+    }
+}
+
+#main-page #page-2 {
+    background-color: #26B1B6;
+}
+
+#main-page #page-2 h1 {
+    text-shadow: 1px 2px #26B1B6, 2px 4px #76b5b6;
+    text-align: center;
+}
+
+#main-page #page-2 .col-xs-12 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#page-2 .time-line {
+    position: relative;
+    width: 100%;
+    height: 88%;
+}
+
+#page-2 .time-line .dash-line {
+    position: absolute;
+    border: 1px dashed white;
+    top: 5%;
+    left: 40px;;
+    height: 85%;
+}
+
+#page-2 .time-line .time-box {
+    width: 60%;
+    position: relative;
+    left: 58px;
+    padding-top: 10%;;
+}
+
+.time-line .time-box .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 0 2px white;;
+    margin: 10px 0 10px -20px;
+
+}
