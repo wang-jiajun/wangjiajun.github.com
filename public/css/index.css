@@ -1,0 +1,711 @@
+/* CSS Reset start */
+html,body,body div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,menu,nav,section,time,mark,audio,video,details,summary{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 90%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent
+}
+
+main,article,aside,figure,footer,header,nav,section,details,summary {
+    display:block
+}
+
+html {
+    box-sizing: border-box
+}
+
+*,*:vbefore,*:afterv {
+    box-sizing:inherit
+}
+
+img,object,embed {
+    max-width:100%
+}
+
+html {
+    overflow-y:scroll
+}
+
+ul {
+    list-style: none
+}
+
+blockquote,q {
+    quotes: none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content:'';
+    content:none
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent
+}
+
+del {
+    text-decoration:line-through
+}
+
+abbr[title],dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help
+}
+
+table {
+    border-collapse:separate;
+    border-spacing:0
+}
+
+th {
+    font-weight:bold;
+    vertical-align:bottom
+}
+
+td {
+    font-weight:normal;
+    vertical-align:top
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    margin:1em 0;
+    padding:0
+}
+
+input,select{
+    vertical-align:middle
+}
+
+pre {
+    white-space:pre;
+    white-space:pre-wrap;
+    white-space:pre-line;
+    word-wrap:break-word
+}
+
+input [type="radio"] {
+    vertical-align:text-bottom
+}
+
+input[type="checkbox"] {
+    vertical-align:bottom
+}
+
+.ie7 input[type="checkbox"] {
+    vertical-align:baseline
+}
+
+.ie6 input {
+    vertical-align:text-bottom
+}
+
+select,input,textarea {
+    font:99% sans-serif
+}
+
+table {
+    font-size:inherit;
+    font:100%
+}
+
+small {
+    font-size:85%
+}
+
+strong {
+    font-weight:bold
+}
+
+td,td img {
+    vertical-align:top
+}
+
+sub,sup {
+    font-size:75%;
+    line-height:0;
+    position:relative
+}
+
+sup {
+    top:-0.5em
+}
+
+sub {
+    bottom:-0.25em
+}
+
+pre,code,kbd,samp {
+    font-family:"微软雅黑"
+}
+
+.clickable,label,input[type=button],input[type=submit],input[type=file],button {
+    cursor:pointer
+}
+
+button,input,select,textarea {
+    margin:0
+}
+
+button,input[type=button] {
+    width:auto;
+    overflow:visible
+}
+
+.ie7 img {
+    -ms-interpolation-mode:bicubic
+}
+
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both
+}
+
+/* CSS Reset end */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul > li {
+    padding: 0;
+    margin: 0;
+}
+
+#page-top {
+    font-size: 1em;
+    font-family: "微软雅黑";
+}
+
+.page-bar {
+    position: fixed;
+    top: 50%;
+    right: 45px;
+    z-index: 999;
+    height: 180px;;
+    margin-top: -90px;
+}
+
+.page-bar > ul {
+    list-style: none;
+}
+
+.page-bar a {
+    display: block;
+    height: 45px;
+    width: 80px;
+    text-align: right;
+    line-height: 45px;
+    text-decoration: none;
+    outline: none;
+    font-size: 1.4em;
+    font-family: "メイリオ";
+    color: #808080;
+}
+
+.page-bar a:hover {
+    font-size: 1.7em;
+    color: #808080;
+}
+
+.page-bar a.current {
+    font-size: 1.7em;
+    font-family: "メイリオ";
+    color: #000000;
+}
+
+.page-bar i {
+    color: #000000;
+}
+
+#main-page {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+#main-page .pages {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: #ffffff;
+}
+
+#main-page .pages:nth-child(even) {
+    top: 100vh;
+}
+
+#main-page .pages:nth-child(odd) {
+    top: 100vh;
+}
+
+#main-page .pages:nth-child(1) {
+    z-index: 100;
+    top: 0;
+}
+
+#main-page #page-1 .bg {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/background.png");
+    background-size:1700px 900px;
+}
+
+#main-page #page-1 h1 {
+    font-size:1000%;
+    margin-top: 300px;
+    text-shadow: 1px 2px #330000, 4px 4px #330000;
+    font-size: 100px;
+    font-weight: normal
+}
+
+#main-page #page-1 select {
+    font-size:20px;
+    font-weight:bold;
+    color: #000000;
+    font-family: "メイリオ";
+    float: right;
+    opacity:0.6;
+    filter:alpha(opacity=60);
+}
+
+#main-page #page-5 {
+    background-color: #ffffff;
+}
+
+#main-page #page-5 h1 {
+    margin-top: 40px;
+    text-shadow: 1px 2px #c0c0c0, 2px 4px #c0c0c0;
+    color: #000000;
+}
+
+#main-page #page-5 #resume-icon {
+    list-style: none;
+    margin: 2% auto 5px auto;;
+    width: 950px;
+    height: 450px;
+    padding: 0;
+    display: block;
+}
+
+#page-5 #resume-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+#page-5 #resume-icon li {
+    display: inline-table;
+    width: 17.25%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 7em;
+    transition: all 0.4s ease 0s;
+}
+
+#page-5 #resume-icon li:hover {
+    transform: rotate(360deg);
+}
+
+#page-5 #resume-icon li:nth-child(3) {
+    transition: none;
+}
+
+#page-5 #resume-icon li:nth-child(3):hover {
+    transform: none;
+}
+
+#page-5 #resume-icon li:nth-child(3) {
+    width: 31%;
+}
+
+#page-5 #resume-icon li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #000000 ;
+}
+
+#page-5 article {
+    width: 60%;
+    margin: 40px auto;
+}
+
+#page-5 article:after {
+    content: "";
+    display: block;
+    width: 0;
+    font-size: 0;
+    line-height: 0;
+    clear: both;
+}
+
+#page-5 article ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    float: left;
+}
+
+#page-5 article ul > li {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 1.6em;
+    color: #000000;
+}
+
+#page-5 article i {
+    font-style: normal;
+    display: inline-block;
+    width: 30%;
+    height: 30px;;
+    line-height: 30px;
+    padding-right: 20px;
+    margin-right: 20px;;
+    text-align: right;
+    background: linear-gradient(to bottom, #ffffff, #d3d3d3, #ffffff) no-repeat right center / 1px 15px;
+    color: #000000;
+}
+
+#page-5 article .introduce {
+    float: left;
+    width: 50%;
+    font-size: 1.6em;
+    text-indent: 2em;
+    line-height: 1.5;
+}
+
+#page-5 article a {
+    color: #000000;
+}
+
+#page-5 article a:hover {
+    color: #c0c0c0;
+}
+
+#page-5 #resume-icon li a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    #page-5 #resume-icon li {
+        font-size: 6em;
+    }
+
+    #page-5 #resume-icon {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #page-5 #resume-icon li {
+        font-size: 5em;
+    }
+}
+
+#page-5 #more-info {
+
+    display: none;
+}
+
+#main-page #page-3 {
+    background-color: #ffffff;
+    background-image: url("../images/page3.png");
+}
+
+#main-page #page-3 h1 {
+    color : #000000;
+    margin-top: 50px;
+    text-shadow: 1px 2px #c0c0c0, 2px 4px #c0c0c0;
+}
+
+#main-page #page-4 {
+    background-color: #ffffff;
+    background-image: url("../images/page4.png");
+}
+
+#main-page #page-4 h1 {
+    margin-top: 100px;
+    text-shadow: 1px 2px #c0c0c0, 2px 4px #c0c0c0;
+    color: #000000;
+}
+
+#main-page #page-4 h2 {
+    margin-top: 15px;
+    margin-left: 450px;
+    color: #000000;
+}
+
+#page-4 .experience {
+    width: 680px;
+    height: 400px;
+    margin: 80px auto;
+}
+
+#page-4 .experience:after {
+    content: '';
+    width: 0;
+    font-size: 0;
+    line-height: 0;
+    clear: both;
+    display: block;
+}
+
+#page-4 .experience .project {
+    width: 1200px;
+    height: 400px;
+    float: left;
+}
+
+#page-4 .experience .project h3 {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+#page-4 .experience .project p {
+    text-indent: 2em;
+    font-size: 1.6em;
+    line-height: 1.5;
+}
+
+#page-4 .experience .project:nth-child(2) {
+    float: right;
+}
+
+#main-page #page-4 .col-xs-12 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#main-page #page-4 .qualification {
+    position: absolute;
+    top:40%;
+    margin-top: -70px;
+    color: #ffffff;
+/*
+    transition: all 1.5s ease-in 0.18s;
+    transform: rotate(-180deg) scale(0.001, 0.001);
+*/
+    font-size: 5em;
+    width:100%;
+    height: 140px;;
+}
+
+#main-page #page-2 {
+    background-color: #ffffff;
+    background-image: url("../images/page2.png");
+}
+
+#main-page #page-2 h1 {
+    margin-top: 100px;
+    text-shadow: 1px 2px #c0c0c0, 2px 4px #c0c0c0;
+    color: #000000;
+}
+
+#page-2 .time-line {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    color: #000000;
+}
+
+#page-2 h4,h5  {
+color: #000000;
+}
+
+#page-2 .time-line .dash-line {
+    width: 100%;
+    height: 0;
+    border: 2px dashed white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background-color: black;
+}
+
+#page-2 .time-line .time-box {
+    position: relative;
+    margin-left: 2%;
+    top: 150px;;
+    height: 200px;
+    width: 30%;
+    float: left;
+}
+
+.time-line .time-box .time {
+    font-size: 2em;
+    text-indent: 10px;
+    margin-bottom: 18px;
+}
+
+.time-line .time-box .dot {
+    width: 15px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #000000;
+    box-shadow: 0 0 2px #c0c0c0;
+}
+
+.time-line .time-box h5,
+.time-line .time-box h4 {
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+#main-page h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 5.5em;
+}
+
+.skills {
+    color: #000000;
+    position: relative;
+    width: 18%;
+    height: 35px;
+    float: left;
+    margin: 20px 5.5%;;
+}
+
+#main-page h3 {
+    margin: 10px;
+    font-size: 2em;
+    color: #000000;
+}
+
+#block {
+    width: 750px;
+    height: 200px;
+    border: dashed 1px black;
+    float: left;
+    margin: 20px;
+}
+
+.skills > div:first-child {
+    margin-bottom: 10px;
+}
+
+.skills > div:first-child span {
+    display: block;
+    float: left;
+    padding: 0 5px;
+    font-size: 1.4em;
+    font-family: "微软雅黑";
+}
+
+.skills > div:first-child .content {
+    float: right;
+}
+
+.skills > div:first-child:after {
+    content: '';
+    display: block;
+    width: 0;
+    font-size: 0;
+    line-height: 0;
+    clear: both;
+}
+
+.skills > .skills-percent {
+    margin-top: 10px;
+    width: 100%;
+    height: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #c0c0c0;
+}
+
+.skills > .skills-percent > .percent {
+    background-color: #5cb85c;
+    width: 0%;
+    height: 100%;
+    transition: width 3s ease 0s;
+}
+
+#progress {
+    position: absolute;
+    z-index: 999;
+    height: 2px;
+    background: #1889C5;
+    -webkit-animation: pulse 1.5s ease-out;
+    -o-animation: pulse 1.5s ease-out;
+    animation: pulse 1.5s ease-out;
+    transition: opacity 500ms linear;
+}
+
+#progress span {
+    position: absolute;
+    height: 2px;
+    -webkit-box-shadow: #1889C5 1px 0 2px 1px;
+    -moz-box-shadow: #1889C5 1px 0 2px 1px;
+    box-shadow: #1889C5 1px 0 2px 1px;
+    opacity: 1;
+    width: 100px;
+    right: 3px;
+    -webkit-animation: pulse-span 2s ease-out 0s infinite;
+    -o-animation: pulse-span 2s ease-out 0s infinite;
+    animation: pulse-span 2s ease-out 0s infinite;
+}
+
+#progress.done {
+    opacity: 0;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes pulse-span {
+    30% {
+        opacity: .6;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .6;
+    }
+}
+
+@media screen and (max-width: 1444px) and (min-width: 1000px) {
+    #main-page h1,
+    #main-page #page-1 h1,
+    #main-page #page-2 h1,
+    #main-page #page-3 h1,
+    #main-page #page-4 h1,
+    #main-page #page-5 h1 {
+        margin-top: 20px;
+    }
+
+    #main-page #page-2 #resume-icon {
+        margin: 5% auto 20px auto;
+    }
+}
