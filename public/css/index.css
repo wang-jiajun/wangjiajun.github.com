@@ -697,11 +697,12 @@ color: #000000;
 
 @media screen and (max-width: 1444px) and (min-width: 1000px) {
     #main-page h1,
+    #main-page #page-1 h1,
     #main-page #page-2 h1,
     #main-page #page-3 h1,
     #main-page #page-4 h1,
     #main-page #page-5 h1 {
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     #main-page #page-2 #resume-icon {
