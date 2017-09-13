@@ -697,7 +697,7 @@ color: #000000;
 
 @media screen and (max-width: 1444px) and (min-width: 1000px) {
     #main-page h1,
-    #main-page #page-1 h1,
+    #main-page #page-1 ,
     #main-page #page-2 h1,
     #main-page #page-3 h1,
     #main-page #page-4 h1,
